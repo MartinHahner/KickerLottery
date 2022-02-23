@@ -1,3 +1,4 @@
+import sys
 import argparse
 
 import numpy as np
@@ -12,7 +13,12 @@ def print_pairs(seed: int, xls_path: str) -> None:
 
     rng = np.random.default_rng(seed)
 
-    xls = pd.ExcelFile(xls_path)
+    try:
+        xls = pd.ExcelFile(xls_path)
+    except FileNotFoundError as e:
+        print(f"Your path to the Excel file does not match the expected default path '{xls_path}'.")
+        print(f"You can set a custom path via 'python lottery.py --path CUSTUM_PATH'")
+        sys.exit(1)
 
     first_sheet = xls.parse(0)
 
@@ -42,6 +48,7 @@ def print_pairs(seed: int, xls_path: str) -> None:
     df = pd.DataFrame(data=d)
 
     print(tabulate(df, headers = 'keys', tablefmt = 'psql', showindex=range(1, n_teams +1)))
+
 
 
 if __name__ == '__main__':
