@@ -8,7 +8,7 @@ from tabulate import tabulate
 
 
 
-def print_pairs(seed: int, xls_path: str):
+def print_pairs(seed: int, xls_path: str) -> None:
 
     rng = np.random.default_rng(seed)
 
