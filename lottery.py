@@ -47,7 +47,7 @@ def print_pairs(seed: int, xls_path: str) -> None:
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument('-p', '--path', type=str,  default=str(Path.home() / 'Downloads' / 'Doodle.xls'), help='seed for random generator')
+    parser.add_argument('-p', '--path', type=str,  default=str(Path.home() / 'Downloads' / 'Doodle.xls'), help='path to Excel file')
     parser.add_argument('-s', '--seed', type=int,  default=42, help='seed for random generator')
 
     args = parser.parse_args()
