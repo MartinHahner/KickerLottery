@@ -27,7 +27,7 @@ dependencies:
   - tabulate=0.8.9
   - tk=8.6.12=h5dbffcc_0
   - tzdata=2021e=he74cb21_0
-  - wheel=0.37.1x
+  - wheel=0.37.1
   - xlrd=2.0.1=pyhd8ed1ab_3
   - xz=5.2.5=haf1e3a3_1
   - zlib=1.2.11=h9173be1_1013
