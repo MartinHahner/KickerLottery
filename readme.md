@@ -7,7 +7,7 @@
 ## Mac
 
 ```bash
-git clone https://github.com/MartinHahner/KickerLottery.git
+git clone git@github.com:MartinHahner/KickerLottery.git
 cd KickerLottery
 conda env create -f mac.yml
 conda activate kicker
@@ -17,7 +17,7 @@ python lottery.py --seed 42
 ## Linux
 
 ```bash
-git clone https://github.com/MartinHahner/KickerLottery.git
+git clone git@github.com:MartinHahner/KickerLottery.git
 cd KickerLottery
 conda env create -f linux.yml
 conda activate kicker
