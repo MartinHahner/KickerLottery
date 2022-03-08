@@ -7,7 +7,7 @@
 ```bash
 git clone https://github.com/MartinHahner/KickerLottery.git
 cd KickerLottery
-conda env create -f environment.yml -y
+conda env create -f kicker.yml
 conda activate kicker
 python lottery.py --seed 42
 ```
