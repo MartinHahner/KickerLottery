@@ -24,6 +24,7 @@ dependencies:
   - readline=8.1.2=hca72f7f_1
   - setuptools=60.9.3=py310h2ec42d9_0
   - sqlite=3.37.2=h707629a_0
+  - tabulate=0.8.9
   - tk=8.6.12=h5dbffcc_0
   - tzdata=2021e=he74cb21_0
   - xlrd=2.0.1=pyhd8ed1ab_3
@@ -34,5 +35,4 @@ dependencies:
     - python-dateutil==2.8.2
     - pytz==2021.3
     - six==1.16.0
-    - tabulate==0.8.9
     - wheel==0.37.1x
